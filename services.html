@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <script src="https://kit.fontawesome.com/dae659b206.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined">
+  <title>Page Title</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      margin: 0;
+      background-color: rgb(38, 38, 38);
+    }
+
+    .navbar {
+      overflow: hidden;
+      height: 2000px;
+      background: #012d36;
+      display: flex;
+      z-index: 10;
+      margin-bottom: 500px;
+      position: relative;
+      width: 100%;
+      flex-direction: column;
+
+
+    }
+
+    .navbar1 {
+      overflow: hidden;
+    }
+
+    .navbar1 a {
+      float: left;
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 20px;
+      text-decoration: none;
+
+    }
+
+    .navbar a {
+      float: left;
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 20px;
+      text-decoration: none;
+    }
+
+    .button1 {
+      width: 215px;
+      height: 50px;
+      margin-top: 25px;
+      margin-bottom: 25px;
+      background-color: #817069;
+      border: transparent;
+    }
+
+    .page1 {
+      margin-left: 250px;
+      margin-top: 20px;
+      color: white
+    }
+
+    .page {
+      margin-top: 20px;
+    }
+
+    .call {
+      margin-top: 20px;
+      margin-left: 400px;
+      border: 1px solid white;
+      margin-bottom: 10px;
+    }
+
+
+    .testimonial {
+      height: 400px;
+      width: 320px;
+      border: 1px solid #817069;
+      margin-left: 80px;
+      background-color: #817069;
+    }
+
+    .reviews {
+      height: 400px;
+      width: 320px;
+      border: 1px solid #817069;
+      background-color: rgb(38, 38, 38)
+    }
+
+    footer {
+      width: 100%;
+      height: 400px;
+      background: rgb(38, 38, 38);
+      color: #fff;
+      display: flex;
+      justify-content: left;
+      align-items: center;
+      position: fixed;
+      bottom: 0px;
+      z-index: 0;
+    }
+
+    .contactDetails {
+      color: #817069;
+      margin-top: 50px;
+      margin-left: 10px;
+    }
+
+    #form {
+      margin-left: 100px;
+      margin-top: 50px;
+      padding: 20px
+    }
+
+
+    @media screen and (max-width: 400px) {
+      .navbar a {
+        float: none;
+        width: 100%;
+      }
+    }
+    .cssmarquee {
+overflow: hidden;
+position: relative;
+}
+.scrolltext{
+position: absolute;
+transform:translateX(100%);
+animation: cssmarquee 20s linear infinite;
+margin:0;
+}
+@keyframes cssmarquee {
+0% {
+transform: translateX(10%);
+}
+100% {
+transform: translateX(-100%);
+}
+}
+  </style>
+</head>
+
+<body>
+  <div>
+    <div class="navbar">
+
+      <div style="display: flex; flex-direction: row;">
+        <div style="width: 2px;">
+          <img src="assets/SSE PNG.png"
+            style=" margin-left: 20px; height:50px; width:100px; margin-top: 20px; position: fixed;opacity: 0.8; z-index: 1;"
+            alt="logoimg">
+        </div>
+        <div class="navbar1">
+          <a href="home.html" class="page1">HOME</a>
+          <a href="services.html" class="page">SERVICES</a>
+          <a href="projects.html" class="page">PROJECTS</a>
+          <a href="contacts.html" class="page">CONTACT</a>
+          <a href="aboutUs.html" class="page">ABOUT US</a>
+          <a href="" class="call">CALL
+            NOW</a>
+        </div>
+      </div>
+      <div style="height:10px;width:100%">
+        <a
+          href="https://www.facebook.com/SadaSivanEnterprises/photos/a.103380578621664/103380225288366/?type=3&source=44&refid=17">
+          <span class="material-icons-outlined"
+            style=" z-index: 1;position: fixed; font-size: 25px;color:#817069;margin-top: 500px;margin-left: 10px;">
+            facebook
+          </span>
+        </a>
+        <a href="https://instagram.com/sadasivan_enterprises?utm_medium=copy_link">
+          <i class="fab fa-instagram"
+            style=" z-index: 1;position: fixed; font-size: 25px;color:#817069;margin-top: 550px;margin-left:-29px;"></i></a>
+        <a href="https://www.linkedin.com/company/sadasivan-enterprises">
+          <i class="fa fa-linkedin"
+            style=" z-index: 1;position: fixed; font-size: 25px;color:#817069;margin-top: 600px;margin-left: -70px;"></i></a>
+      </div>
+      <div style="display: flex; flex-direction: row; margin-top: 100px;">
+        <div class="testimonial">
+          <h1 style="padding-left: 60px;padding-top:100px ;color:white;font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                ;font-weight: 1;font-size: 50px;">Our Services</h1>
+        </div>
+        <div class="reviews">
+          <h1 style="padding-left: 110px;padding-top:150px ;color: #817069;font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                ;font-weight: 1;font-size: 40px;">Install</h1>
+        </div>
+        <div class="reviews">
+          <h1 style="padding-left:15px;padding-top:150px ;color: #817069;font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                ;font-weight: 1;font-size: 40px;">Commissioning</h1>
+        </div>
+        <div class="reviews">
+          <h1 style="padding-left: 75px;padding-top:150px ;color: #817069;font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                ;font-weight: 1;font-size: 40px;">Industrial</h1>
+        </div>
+      </div>
+      <div style="display: flex; flex-direction: row;height: 500px;">
+        <div style="display: flex; flex-direction: column;">
+          <i class="material-icons-outlined"
+            style="font-size:70px;color:#817069;padding-top: 70px; padding-left: 150px;color: green;">group</i>
+          <h1 style="padding-left: 150px;color: white;font-weight:1">Awesome Team</h1>
+          <p style="width: 35%; margin-left:150px; font-size: 18px; color: white; font-weight: 1;">Our team looks
+            forward to collaborative working methods when it comes to working on a project. We work according to your
+            needs implying our experienced knowledge for fruitful results.</p>
+        </div>
+        <div style="display: flex; flex-direction: column;">
+          <i class="material-icons-outlined"
+            style="font-size:70px;color:#817069;padding-top: 70px;color:orange;margin-left: 0px;">speed</i>
+            <h1 style="padding-left: 0px;color: white;font-weight:1">Faster Performance</h1>
+          <p style="width: 40%; margin-left:0px; font-size: 18px; color: white; font-weight: 1;">We don't believe in giving promises. We believe in committing ourselves to your company and work harder to achieve the desired results in very less time.</p>
+        </div>
+        <div style="display: flex; flex-direction: column;">
+          <i class="material-icons-outlined"
+            style="font-size:70px;color:#817069;padding-top: 70px; padding-left: 0px;color: yellow;">quickreply</i>
+            <h1 style="padding-left: 0px;color: white;font-weight:1">Real Time Tracking</h1>
+          <p style="width: 60%; margin-left:0px; font-size: 18px; color: white; font-weight: 1;">You can track the results 24*7 with the aid of our dashboard which we provide you when you do business with us.</p>
+        </div>
+      </div>
+      <div style="display: flex; flex-direction: row;">
+        <div class="reviews" style="margin-left: 100px;justify-content: center;align-items: center;">
+          <h1 style="padding-left: 65px;padding-top:150px ;color: #817069;font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                ;font-weight: 1;font-size: 40px;">Domestic</h1>
+        </div>
+        <div class="reviews">
+          <h1 style="padding-left: 55px;padding-top:150px ;color: #817069;font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                ;font-weight: 1;font-size: 40px;">Commercial</h1>
+        </div>
+        <div class="reviews">
+          <h1 style="padding-left: 55px;padding-top:150px ;color: #817069; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                 ;font-weight: 10;font-size: 40px;">International</h1>
+        </div>
+        <div style="height: 400px;
+            width: 320px;
+            border: 1px solid #817069;
+            background-color: #817069">
+          <h1 style="padding-left: 55px;padding-top:100px ;color: white;font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                font-weight:10;font-size: 50px;"> Service Area</h1>
+        </div>
+      </div>
+      <h1 style="margin-left: 100px;color: #817069;margin-top: 50px;font-size: 50px; font-weight: 1;">Our Brands</h1>
+      <div style="width:87%; height:300px;background-image: url(https://i.ibb.co/PTJDkgb/testimonials.jpg);
+      background-position: center;
+      background-size: cover;margin-left: 100px;" class="cssmarquee">
+      <div class="scrolltext" style="display: flex; flex-direction:row; height:320px; width:2700px">
+          <img src="assets/Bosch.png" style="padding: 30px;margin-top: -50px;" >
+          <img src="assets/Bajaj Electricals.png" style="padding: 30px;">
+          <img src="assets/Siemens.png" style="padding: 30px;">
+          <img src="assets/Microtek.png" style="padding: 30px;">
+          <img src="assets/V Guard.png" style="padding: 30px;">
+          <img src="assets/Legrand.png" style="padding: 30px;">
+          <img src="assets/RR Kabel.png" style="padding: 30px;">
+          <img src="assets/Exide.png" style="padding: 30px;">
+          <img src="assets/MECO.png" style="padding: 30px;">
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div
+        style="height: 450px; width: 100%; background-color:rgb(38,38,38) ; display: flex; flex-direction: row; position: absolute;"
+        id="contacts">
+        <div style="display: flex; flex-direction: column;width: 400px;margin-left: 80px;">
+          <h1 style="color: #817069; margin-top: 50px; margin-left: 80px; font-size: 50px;font-weight: 20;">Contact Us
+          </h1>
+          <div style="display: flex;flex-direction: row;">
+            <span class="material-icons-outlined"
+              style="font-size:50px;color:#817069;margin: 10px;margin-left: 30px;">home</span>
+            <l1 style="color: #817069; margin-top: 20px;">
+              3-184/1l, Amman Street, Ananthan Nagar, Asaripallam( PO), Nagercoil, K K dist-629201</l1>
+          </div>
+          <div style="display: flex;flex-direction: row;">
+            <span class="material-icons-outlined"
+              style="font-size:50px;color:#817069;margin-top: 20px;margin-left: 30px;">email</span>
+            <l1 class="contactDetails">reachsse@hotmail.com</l1>
+          </div>
+          <div style="display: flex;flex-direction: row;">
+            <span class="material-icons-outlined"
+              style="font-size:50px;color:#817069;margin-left: 30px; margin-top: 30px;">phone_android</span>
+            <l1 class="contactDetails"> 9791511832</l1>
+          </div>
+          <div class="form"></div>
+        </div>
+        <div>
+          <form id="form">
+            <div style="display: flex; flex-direction: row;">
+              <input type="text" id="Name" placeholder="Full Name"
+                style="border-top: transparent; background-color: initial; border-bottom-color: #817069;padding: 20px; border-left: transparent;border-right: transparent; margin: 25px; font-size: 18px;"><br>
+              <input type="text" id="Email" placeholder="Enter your mail id"
+                style="border-top: transparent; background-color: initial; border-bottom-color: #817069;padding: 20px; border-left: transparent;border-right: transparent;margin: 25px;font-size: 18px;"><br>
+            </div>
+            <div style="display: flex; flex-direction: row;">
+              <input type="text" id="Phone" placeholder="Enter your phone number" required
+                style="border-top: transparent; background-color: initial; border-bottom-color: #817069;padding: 20px; border-left: transparent;border-right: transparent;margin: 25px;font-size: 18px;"><br>
+              <input type="text" id="Address" placeholder="Address" required
+                style="border-top: transparent; background-color: initial; border-bottom-color: #817069;padding: 20px; border-left: transparent;border-right: transparent;margin: 25px;font-size: 18px;"><br>
+            </div>
+            <button type="submit" class="button1" style="margin-left: 170px;">Submit</button>
+          </form>
+        </div>
+        <div style="display: flex;flex-direction: column;margin-left: 100px; margin-top: 70px;" class="navbar1">
+          <a href="" class="page">HOME</a>
+          <a href="services.html" class="page">SERVICES</a>
+          <a href="projects.html" class="page">PROJECTS</a>
+          <a href="#contacts" class="page">CONTACT</a>
+          <a href="aboutUs.html" class="page">ABOUT US</a>
+        </div>
+      </div>
+    </footer>
+  </div>
+</body>
+<script>
+function store(){ //stores items in the localStorage
+    var Name = document.getElementById('Name').value;
+    var Email = document.getElementById('Email').value;
+    var key = document.getElementById('Phone').value;
+    var Address = document.getElementById('Address').value; //gets the key from the user
+
+    const details = {
+        Name: Name,
+        // Phone: Phone,
+        Email: Email,
+        Address:Address
+    }
+
+    window.localStorage.setItem(key,JSON.stringify(details));  
+    //converting object to string
+}
+
+function retrieveRecords(){ //retrieves items in the localStorage
+    console.log("retrieve records");
+     var key = document.getElementById('retrieveKey').value;
+    var records = window.localStorage.getItem(key);
+    var paragraph = document.createElement("p");
+    var infor = document.createTextNode(records);
+    paragraph.appendChild(infor);
+    var element = document.getElementById("retrieve");
+    element.appendChild(paragraph);
+}
+window.onload =function(){ //ensures the page is loaded before functions are executed.
+    document.getElementById("form").onsubmit = store
+    document.getElementById("retrieveButton").onclick = retrieveRecords
+}
+</script>
+
+</html>

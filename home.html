@@ -1,0 +1,1116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <script src="https://kit.fontawesome.com/dae659b206.js" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="main.js"></script>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+  <title>Page Title</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://fonts.googleapis.com/css?family=Open+Sans:400,700&amp"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://fonts.googleapis.com/css?family=Open+Sans:400,700&amp"></script>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      margin: 0;
+      background-color: #012d36;
+      height: 4600px;
+    }
+
+    .navbar {
+      overflow: hidden;
+      height: 100px;
+      background: #012d36;
+      display: flex;
+      position: relative;
+      width: 100%;
+      flex-direction: column;
+
+
+
+    }
+
+    .navbar1 {
+      overflow: hidden;
+    }
+
+    .navbar1 a {
+      float: left;
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 20px;
+      text-decoration: none;
+
+    }
+
+
+    .page1 {
+      margin-left: 250px;
+      margin-top: 20px;
+      color: white
+    }
+
+    .page {
+      margin-top: 20px;
+    }
+
+    .call {
+      margin-top: 20px;
+      margin-left: 400px;
+      border: 1px solid white;
+      margin-bottom: 10px;
+    }
+
+    .divrow {
+      display: flex;
+      flex-direction: row
+    }
+
+    .button1 {
+      width: 215px;
+      height: 50px;
+      margin-top: 50px;
+      background-color: #817069;
+      border: transparent;
+      margin-left: 30px;
+    }
+
+    .button2 {
+      width: 215px;
+      height: 50px;
+      margin-top: 230px;
+      background-color: #817069;
+      margin-left: 520px;
+      border: transparent;
+
+
+    }
+
+    .highlight1 {
+      height: 302px;
+      width: 320px;
+      border: 1px solid #817069;
+      padding-top: 95px;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .highlight2 {
+      height: 302px;
+      width: 320px;
+      border: 1px solid #817069;
+      padding-top: 95px;
+    }
+
+    .points {
+      padding: 10px;
+      font-size: 18px;
+    }
+
+    .points1 {
+      padding: 10px;
+      margin-left: 250px;
+      font-size: 18px;
+
+
+    }
+
+    .abouth {
+      color: white;
+      margin-left: 90px;
+      margin-top: 70px;
+      font-size: 40px;
+      font-weight: 100;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    .abouth2 {
+      color: #817069;
+      margin-left: 90px;
+      margin-top: 40px;
+      font-size: 35px;
+      font-weight: 1;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    .p1 {
+      color: white;
+      margin-left: 90px;
+      font-weight: 1;
+      line-height: 150%;
+      margin-right: 20px;
+      margin-top: 20px;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    .p2 {
+      color: white;
+      margin-left: 90px;
+      font-weight: 1;
+      line-height: 150%;
+      margin-right: 20px;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    .p3 {
+      color: white;
+      margin-left: 90px;
+      font-weight: 1;
+      line-height: 150%;
+      margin-right: 20px;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    .per {
+      background-color: rgb(38, 38, 38);
+      height: 300px;
+      padding-top: 10px;
+      padding-left: 100px;
+      width: 100%;
+    }
+
+    .nbr {
+      font-size: 100px;
+      margin-left: 300px;
+      margin-top: -20px;
+      margin-bottom: 0px;
+      color: rgba(247, 241, 241, 0.5);
+      font-weight: lighter;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+
+    .nbr1 {
+      font-size: 100px;
+      padding: 1px;
+      margin-top: -20px;
+      margin-left: 300px;
+      margin-bottom: -20px;
+      color: rgba(247, 241, 241, 0.5);
+      font-weight: lighter;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+    }
+
+    .nbr2 {
+      font-size: 100px;
+      padding: 1px;
+      margin-top: -10px;
+      margin-left: 300px;
+      margin-bottom: 0px;
+      color: rgba(247, 241, 241, 0.5);
+      font-weight: lighter;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+
+    }
+
+    .nbr3 {
+      font-size: 100px;
+      padding: 1px;
+      margin-top: -10px;
+      margin-left: 320px;
+      margin-bottom: 0px;
+      color: rgba(247, 241, 241, 0.5);
+      font-weight: lighter;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+
+    .founder {
+      font-size: 120px;
+      font-style: italic;
+      font-family: 'Times New Roman', Times, serif;
+      font-weight: 100;
+      margin-left: 50px;
+    }
+
+    .testimonial1 {
+      height: 450px;
+      width: 320px;
+      border: 1px solid #817069;
+      padding-left: 30px;
+      padding-top: 150px;
+      background: url(https://i.ibb.co/PTJDkgb/testimonials.jpg);
+      background-position: center;
+      background-size: cover;
+    }
+
+    .reviewlayout {
+      height: 450px;
+      width: 900px;
+      border: 1px solid #817069;
+      background-color: rgb(38, 38, 38);
+      padding: 10px;
+      padding-left: 90px;
+      padding-right: 90px;
+    }
+
+    .reviews-hidden {
+      display: none;
+    }
+
+    .testimonial:after {
+      position: absolute;
+      top: -0 !important;
+      left: 0;
+      content: " ";
+      width: 100%;
+      height: 100px;
+      float: left;
+      z-index: 99;
+    }
+
+    .testimonial {
+      min-height: 375px;
+      position: relative;
+      padding-top: 0px;
+      padding-bottom: 50px;
+      background-position: center;
+      background-size: cover;
+    }
+
+    #testimonial4 .carousel-inner:hover {
+      cursor: -moz-grab;
+      cursor: -webkit-grab;
+    }
+
+    #testimonial4 .carousel-inner:active {
+      cursor: -moz-grabbing;
+      cursor: -webkit-grabbing;
+    }
+
+    #testimonial4 .carousel-inner .item {
+      overflow: hidden;
+    }
+
+    .testimonial4_indicators .carousel-indicators {
+      left: 0;
+      margin: 0;
+      width: 100%;
+      font-size: 0;
+      height: 20px;
+      bottom: 15px;
+      padding: 0 5px;
+      cursor: e-resize;
+      overflow-x: auto;
+      overflow-y: hidden;
+      position: absolute;
+      text-align: center;
+      white-space: nowrap;
+    }
+
+    .testimonial4_indicators .carousel-indicators li {
+      padding: 0;
+      width: 14px;
+      height: 14px;
+      border: none;
+      text-indent: 0;
+      margin: 2px 3px;
+      cursor: pointer;
+      display: inline-block;
+      background: #ffffff;
+      -webkit-border-radius: 100%;
+      border-radius: 100%;
+    }
+
+    .testimonial4_indicators .carousel-indicators .active {
+      padding: 0;
+      width: 14px;
+      height: 14px;
+      border: none;
+      margin: 2px 3px;
+      background-color: #9dd3af;
+      -webkit-border-radius: 100%;
+      border-radius: 100%;
+    }
+
+    .testimonial4_indicators .carousel-indicators::-webkit-scrollbar {
+      height: 3px;
+    }
+
+    .testimonial4_indicators .carousel-indicators::-webkit-scrollbar-thumb {
+      background: #eeeeee;
+      -webkit-border-radius: 0;
+      border-radius: 0;
+    }
+
+    .testimonial4_control_button .carousel-control {
+      top: 175px;
+      opacity: 1;
+      width: 40px;
+      bottom: auto;
+      height: 40px;
+      font-size: 10px;
+      cursor: pointer;
+      font-weight: 700;
+      overflow: hidden;
+      line-height: 38px;
+      text-shadow: none;
+      text-align: center;
+      position: absolute;
+      background: transparent;
+      border: 2px solid #ffffff;
+      text-transform: uppercase;
+      -webkit-border-radius: 100%;
+      border-radius: 100%;
+      -webkit-box-shadow: none;
+      box-shadow: none;
+      -webkit-transition: all 0.6s cubic-bezier(0.3, 1, 0, 1);
+      transition: all 0.6s cubic-bezier(0.3, 1, 0, 1);
+    }
+
+    .testimonial4_control_button .carousel-control.left {
+      left: 7%;
+      top: 50%;
+      right: auto;
+    }
+
+    .testimonial4_control_button .carousel-control.right {
+      right: 7%;
+      top: 50%;
+      left: auto;
+    }
+
+    .testimonial4_control_button .carousel-control.left:hover,
+    .testimonial4_control_button .carousel-control.right:hover {
+      color: #000;
+      background: #fff;
+      border: 2px solid #fff;
+    }
+
+    .testimonial4_header {
+      top: 0;
+      left: 0;
+      bottom: 0;
+      width: 550px;
+      display: block;
+      margin: 30px auto;
+      text-align: center;
+      position: relative;
+    }
+
+    .testimonial4_header h4 {
+      color: #ffffff;
+      font-size: 30px;
+      font-weight: 600;
+      position: relative;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+    }
+
+    .testimonial4_slide {
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      width: 70%;
+      margin: auto;
+      padding: 20px;
+      position: relative;
+      text-align: center;
+    }
+
+    .testimonial4_slide img {
+      top: 0;
+      left: 0;
+      right: 0;
+      width: 136px;
+      height: 136px;
+      margin: auto;
+      display: block;
+      color: #f2f2f2;
+      font-size: 18px;
+      line-height: 46px;
+      text-align: center;
+      position: relative;
+      border-radius: 50%;
+      box-shadow: -6px 6px 6px rgba(0, 0, 0, 0.23);
+      -moz-box-shadow: -6px 6px 6px rgba(0, 0, 0, 0.23);
+      -o-box-shadow: -6px 6px 6px rgba(0, 0, 0, 0.23);
+      -webkit-box-shadow: -6px 6px 6px rgba(0, 0, 0, 0.23);
+    }
+
+    .testimonial4_slide p {
+      color: #ffffff;
+      font-size: 20px;
+      line-height: 1.4;
+      margin: 40px 0 20px 0;
+    }
+
+    .testimonial4_slide h4 {
+      color: #ffffff;
+      font-size: 22px;
+    }
+
+    .testimonial .carousel {
+      padding-bottom: 50px;
+    }
+
+    .testimonial .carousel-control-next-icon,
+    .testimonial .carousel-control-prev-icon {
+      width: 35px;
+      height: 35px;
+    }
+
+    .founderimg {
+      width: 450px;
+      height: 100%;
+
+    }
+
+    footer {
+      width: 100%;
+      height: 400px;
+      background: rgb(38, 38, 38);
+      color: #fff;
+      display: flex;
+      justify-content: left;
+      align-items: center;
+      position: fixed;
+      bottom: 0px;
+      z-index: 0;
+    }
+
+
+
+    .contactDetails {
+      color: #817069;
+      margin-top: 50px;
+      margin-left: 10px;
+    }
+
+    #form {
+      margin-left: 100px;
+      margin-top: 50px;
+      padding: 20px
+    }
+
+    @media screen and (max-width: 700px) {
+      .row {
+        flex-direction: column;
+      }
+    }
+
+    @media screen and (max-width: 400px) {
+      .navbar a {
+        float: none;
+        width: 100%;
+      }
+    }
+
+    @import url("https://fonts.googleapis.com/css2?family=Merriweather&family=Merriweather+Sans:wght@300&display=swap");
+
+    .scroll-element {
+      width: 50%;
+    }
+
+    .scroll-element {
+      min-height: 300px;
+      height: 100%;
+      background-color: #eaeaea;
+    }
+
+
+    @media screen and (max-width: 650px) {
+
+      .scroll-container,
+      .scroll-container:nth-of-type(even) {
+        flex-direction: column;
+        align-content: inherit;
+      }
+
+      .scroll-element {
+        height: 100%;
+      }
+
+      .scroll-element,
+      .scroll-caption {
+        width: 100%;
+      }
+    }
+
+    /**Styling scrollable elements*/
+
+    .js-scroll {
+      opacity: 0;
+      transition: opacity 500ms;
+    }
+
+    .js-scroll.scrolled {
+      opacity: 1;
+    }
+
+    .scrolled.fade-in {
+      animation: fade-in 2s ease-in-out both;
+    }
+
+    .scrolled.fade-in-bottom {
+      animation: fade-in-bottom 2s ease-in-out both;
+    }
+
+    .scrolled.slide-left {
+      animation: slide-in-left 2s ease-in-out both;
+    }
+
+    .scrolled.slide-right {
+      animation: slide-in-right 2s ease-in-out both;
+    }
+
+
+    @keyframes slide-in-left {
+      0% {
+        -webkit-transform: translateX(-100px);
+        transform: translateX(-100px);
+        opacity: 0;
+      }
+
+      100% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+        opacity: 1;
+      }
+    }
+
+    @keyframes slide-in-right {
+      0% {
+        -webkit-transform: translateX(100px);
+        transform: translateX(100px);
+        opacity: 0;
+      }
+
+      100% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+        opacity: 1;
+      }
+    }
+
+    @keyframes fade-in-bottom {
+      0% {
+        -webkit-transform: translateY(50px);
+        transform: translateY(50px);
+        opacity: 0;
+      }
+
+      100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+
+    @keyframes fade-in {
+      0% {
+        opacity: 0;
+      }
+
+      100% {
+        opacity: 1;
+      }
+    }
+  </style>
+
+</head>
+
+<body>
+  <div>
+    <div style=" overflow: hidden;
+    height: 4200px;
+    background: #012d36;
+    display: flex;
+    z-index: 10;
+    position: relative;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;;">
+      <div class="navbar" id="pin2">
+        <div style="display: flex; flex-direction: row;">
+          <div style="width: 2px;">
+            <img src="assets/SSE PNG.png"
+              style=" height:50px; width:100px; margin-top: 20px; position: fixed;opacity: 0.8; z-index: 1;"
+              alt="logoimg">
+          </div>
+          <div class="navbar1">
+            <a href="" class="page1">HOME</a>
+            <a href="services.html" class="page">SERVICES</a>
+            <a href="projects.html" class="page">PROJECTS</a>
+            <a href="#contacts" class="page">CONTACT</a>
+            <a href="aboutUs.html" class="page">ABOUT US</a>
+            <a href="contacts.html" class="call">CALL
+              NOW</a>
+          </div>
+        </div>
+
+      </div>
+      <div style="height:700px;width:100%;">
+        <a
+          href="https://www.facebook.com/SadaSivanEnterprises/photos/a.103380578621664/103380225288366/?type=3&source=44&refid=17">
+          <span class="material-icons-outlined"
+            style=" z-index: 1;position: fixed; font-size: 25px;color:#817069;margin-top: 450px;margin-left: 25px;">
+            facebook
+          </span>
+        </a>
+        <a href="https://instagram.com/sadasivan_enterprises?utm_medium=copy_link">
+          <i class="fab fa-instagram"
+            style=" z-index: 1;position: fixed; font-size: 25px;color:#817069;margin-top: 500px;margin-left: 25px;"></i></a>
+        <a href="https://www.linkedin.com/company/sadasivan-enterprises">
+          <i class="fa fa-linkedin"
+            style=" z-index: 1;position: fixed; font-size: 25px;color:#817069;margin-top: 550px;margin-left: 25px;"></i></a>
+        <img src="assets/WhatsApp Image 2021-06-13 at 10.35.44 PM.jpeg"
+          style="height:700px;  background-repeat: no-repeat;;  background-size: cover;transition: 3s; position: relative;margin-left: 100px;"
+          id="logo">
+      </div>
+      <div class="divrow">
+        <div style="width: 800px;margin-left: 16px;">
+          <img src="assets/Cropped-1.jpg" style="width: 640px;">
+        </div>
+        <div style="display: flex; flex-direction: column;margin-left: 20px;">
+          <h1 style="color:white; font-size: 40px;">Our Services</h1>
+          <u1 style="color:white">
+            <li class="points">Install</li>
+            <li class="points">Commissioning</li>
+            <li class="points">Industrial</li>
+          </u1>
+          <h1 style="color:white; font-size: 40px; margin-left: 250px;margin-top: 50px; "> Service Area</h1>
+          <u1 style="color:white;margin-bottom: 50px;">
+            <li class="points1">Domestic</l1i>
+            <li class="points1">Commercial</li>
+            <li class="points1">International</li>
+          </u1>
+          <button class="button1">MORE INFO</button>
+        </div>
+      </div>
+
+      <div class="divrow">
+        <div class="highlight1">
+          <i class="material-icons-outlined" style="font-size:80px;color:#817069;padding-left: 120px;">home</i>
+          <h4 style="color: white;padding-left: 70px;">Vast Experience</h4>
+        </div>
+        <div class="highlight2" style="justify-content: center;">
+          <i class="material-icons-outlined" style="font-size:80px;color:#817069;padding-left: 120px;">groups</i>
+          <h4 style="color: white;padding-left: 55px;">Professional Team</h4>
+        </div>
+        <div class="highlight2">
+          <i class="material-icons-outlined" style="font-size:80px;color:#817069;padding-left: 120px;">grid_view</i>
+          <h4 style="color: white;padding-left: 100px;"> High Finish</h4>
+        </div>
+        <div class="highlight2">
+          <i class="material-icons-outlined"
+            style="font-size:80px;color:#817069;padding-left: 120px;">account_balance</i>
+          <h4 style="color: white;padding-left: 85px;">Sustainable & Accountable</h4>
+        </div>
+      </div>
+      <div class="divrow">
+        <div style="height: 650px; width: 640px; border: 1px solid #817069;">
+          <h1 class="abouth">
+            About us</h1>
+          <h2 class="abouth2">
+            Electrical Contracting Company</h2>
+          <p class="p1">For over 30 + years , we have completed many of electrical private works and Public work
+            Department electrical works and also taking electrical maintenance work and running successfully.</p>
+          <p class="p1">
+            We are one of the Leading Electrical Contracting Company in NAGERCOIL (KANYAKUMARI District). We have more
+            than 25 Years Experiance Skilled "Labour" and "Supervisor".
+            "Quality and Client Satisfaction is Our First Priority"</p>
+          <p class="p1">
+            We Undertake all types of Electrical Works Including HT & LT panel Fabrication works, Hospital Wiring, House
+            Wiring, Computer Cable Net Working, Office Automation Equipments wiring, Automatic Generator & Panel Wiring,
+            Lightning Arrester etc.....
+          </p>
+
+        </div>
+        <img src="assets/Cropped-2.jpg" style="width:640px; height:650px">
+      </div>
+      <div class="per">
+        <div style="display: flex; flex-direction: row;">
+          <div style="display: flex; flex-direction: column;">
+            <div style="display: flex; flex-direction: row;">
+              <p id="nbr" class="nbr">96</p>
+              <p
+                style="font-size: 60px;margin-top: 8px;color: rgba(247, 241, 241, 0.5); margin-bottom: 0px;font-weight: lighter;font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">
+                %</p>
+            </div>
+            <p
+              style="margin-left:270px; margin-top:-60px; color: rgba(247, 241, 241, 0.5);font-weight: lighter;font-size: 25px;">
+              CLIENT
+              RETENTION</p>
+          </div>
+          <div style="display: flex; flex-direction: column;">
+            <div style="display: flex; flex-direction: row;">
+              <p id="nbr1" class="nbr1">30</p>
+              <p
+                style="font-size: 60px;margin-top: 8px;color: rgba(247, 241, 241, 0.5); margin-bottom: 0px;font-weight: lighter;font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">
+                +</p>
+            </div>
+            <p
+              style="margin-left:220px; margin-top:-40px; color: rgba(247, 241, 241, 0.5);font-weight: lighter;font-size: 25px;">
+              YEARS
+              OF EXPERIENCE</p>
+          </div>
+        </div>
+        <div style="display: flex; flex-direction: row;" id="nbr">
+          <div style="display: flex; flex-direction: column;">
+            <div style="display: flex; flex-direction: row;">
+              <p id="nbr2" class="nbr2">60</p>
+              <p
+                style="font-size: 60px;margin-top: 8px;color: rgba(247, 241, 241, 0.5); margin-bottom: 0px;font-weight: lighter;font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">
+                +</p>
+            </div>
+            <p
+              style="margin-left:280px; margin-top:-60px; color: rgba(247, 241, 241, 0.5);font-weight: lighter;font-size: 25px;">
+              PROFESSIONALS</p>
+          </div>
+          <div style="display: flex; flex-direction: column;">
+            <div style="display: flex; flex-direction: row;">
+              <p id="nbr3" class="nbr3">300</p>
+              <p
+                style="font-size: 60px;margin-top: 8px;color: rgba(247, 241, 241, 0.5); margin-bottom: 0px;font-weight: lighter; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">
+                +</p>
+            </div>
+            <p
+              style="margin-left:260px; margin-top:-60px; color: rgba(247, 241, 241, 0.5);font-weight: lighter;font-size: 25px;">
+              SATISFIED CLIENTS</p>
+          </div>
+        </div>
+        <div
+          style="height: 650px;width:1005;  display: flex; flex-direction: column;margin-left: 70px;margin-top: 50px;">
+          <div style="margin-left: 0px;">
+            <div style="display: flex; flex-direction: row;">
+              <h1 style="top:345px;
+            left:320px; 
+            position:relative;
+            z-index:10; color: rgb(73, 72, 72); font-size: 70px; font-stretch:ultra-condensed;;">The</h1>
+              <h1 style="top:375px;
+             left:370px; 
+             position:relative;
+             z-index:10; color: black; font-size: 70px; font-weight: lighter;">FOUNDER</h1>
+            </div>
+            <div style="background-color:#817069;
+             width: 1200px;
+            height: 500px;
+            top:15px;
+            left:50px; 
+            position:relative;
+            z-index:1;" class="scroll-element js-scroll slide-left">
+            </div>
+            <div style="
+            width: 450px;
+             height: 600px;
+            position:relative;
+            top:-400px;
+            left:-70px;
+            z-index:2;
+        " class="scroll-element js-scroll fade-in-bottom">
+              <img class="founderimg" src="assets/001.jpg">
+            </div>
+            <div style="background-color:rgb(38,38,38);
+             width: 850px;
+            height: 400px;
+            position:relative;
+            top:-780px;
+            left:130px;
+            z-index:3; 
+             opacity: 0.99;
+             padding:20px" class="scroll-element js-scroll slide-right">
+              <h1 style="font-weight: 20; color: white; margin-left: 20px;">Mr. Sadasivan</h1>
+              <h3 style="font-weight: 20; color: white; margin-left: 20px;"> 1961-2020</h3>
+              <p style="font-weight: 20; color: white; margin-left: 20px;line-height: 25px;">A first-generation
+                enterpreneur,
+                MR. S.Sadasivan started his journey in the 1990's. His dream was of making available to everyone
+                what only
+                the
+                rich could afford.</p>
+              <p style="font-weight: 20; color: white; margin-left: 20px;line-height: 25px;">During this journey
+                he also
+                invested and mentored other enterpreneurs. He embodies the organisation's credo, "Rewrite Rules,
+                Retain
+                Values" and consider indianness as the core value driving the organisation.</p>
+            </div>
+          </div>
+
+
+
+        </div>
+
+        <button class="button2">MORE INFO</button>
+        <div style="display: flex; flex-direction: row; border: 1px solid black;margin-top: 50px;">
+          <div class="testimonial1">
+            <h1 style="font-size: 40px; color: white;">Testimonials</h1>
+          </div>
+          <div class="reviewlayout">
+            <section class="testimonial text-center">
+              <div id="testimonial4"
+                class="carousel slide testimonial4_indicators testimonial4_control_button thumb_scroll_x swipe_x"
+                data-ride="carousel" data-pause="hover" data-interval="5000" data-duration="2000">
+
+                <div class="carousel-inner" role="listbox">
+                  <div class="carousel-item active">
+                    <div class="testimonial4_slide">
+                      <img src="https://i.ibb.co/8x9xK4H/team.jpg" class="img-circle img-responsive" />
+                      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                        the
+                        industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of
+                        type
+                        and
+                        scrambled it to make a type specimen book. </p>
+                      <h4>Client 1</h4>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="testimonial4_slide">
+                      <img src="https://i.ibb.co/8x9xK4H/team.jpg" class="img-circle img-responsive" />
+                      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                        the
+                        industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of
+                        type
+                        and
+                        scrambled it to make a type specimen book. </p>
+                      <h4>Client 2</h4>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="testimonial4_slide">
+                      <img src="https://i.ibb.co/8x9xK4H/team.jpg" class="img-circle img-responsive" />
+                      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                        the
+                        industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of
+                        type
+                        and
+                        scrambled it to make a type specimen book. </p>
+                      <h4>Client 3</h4>
+                    </div>
+                  </div>
+                </div>
+                <a class="carousel-control-prev" href="#testimonial4" data-slide="prev">
+                  <span class="carousel-control-prev-icon"></span>
+                </a>
+                <a class="carousel-control-next" href="#testimonial4" data-slide="next">
+                  <span class="carousel-control-next-icon"></span>
+                </a>
+              </div>
+            </section>
+          </div>
+
+        </div>
+      </div>
+
+
+    </div>
+    <footer>
+      <div
+        style="height: 450px; width: 100%; background-color:rgb(38,38,38) ; display: flex; flex-direction: row; position: absolute;"
+        id="contacts">
+        <div style="display: flex; flex-direction: column;width: 400px;margin-left: 80px;">
+          <h1 style="color: #817069; margin-top: 50px; margin-left: 80px; font-size: 50px;font-weight: 20;">Contact Us
+          </h1>
+          <div style="display: flex;flex-direction: row;">
+            <span class="material-icons-outlined"
+              style="font-size:50px;color:#817069;margin: 10px;margin-left: 30px;">home</span>
+            <l1 style="color: #817069; margin-top: 20px;">
+              3-184/1l, Amman Street, Ananthan Nagar, Asaripallam( PO), Nagercoil, K K dist-629201</l1>
+          </div>
+          <div style="display: flex;flex-direction: row;">
+            <span class="material-icons-outlined"
+              style="font-size:50px;color:#817069;margin-top: 20px;margin-left: 30px;">email</span>
+            <l1 class="contactDetails">reachsse@hotmail.com</l1>
+          </div>
+          <div style="display: flex;flex-direction: row;">
+            <span class="material-icons-outlined"
+              style="font-size:50px;color:#817069;margin-left: 30px; margin-top: 30px;">phone_android</span>
+            <l1 class="contactDetails"> 9791511832</l1>
+          </div>
+          <div class="form"></div>
+        </div>
+        <div>
+          <form id="form">
+            <div style="display: flex; flex-direction: row;">
+              <input type="text" id="Name" placeholder="Full Name"
+                style="border-top: transparent; background-color: initial; border-bottom-color: #817069;padding: 20px; border-left: transparent;border-right: transparent; margin: 25px; font-size: 18px;"><br>
+              <input type="text" id="Email" placeholder="Enter your mail id"
+                style="border-top: transparent; background-color: initial; border-bottom-color: #817069;padding: 20px; border-left: transparent;border-right: transparent;margin: 25px;font-size: 18px;"><br>
+            </div>
+            <div style="display: flex; flex-direction: row;">
+              <input type="text" id="Phone" placeholder="Enter your phone number" required
+                style="border-top: transparent; background-color: initial; border-bottom-color: #817069;padding: 20px; border-left: transparent;border-right: transparent;margin: 25px;font-size: 18px;"><br>
+              <input type="text" id="Address" placeholder="Address" required
+                style="border-top: transparent; background-color: initial; border-bottom-color: #817069;padding: 20px; border-left: transparent;border-right: transparent;margin: 25px;font-size: 18px;"><br>
+            </div>
+            <button type="submit" class="button1" style="margin-left: 170px;">Submit</button>
+          </form>
+        </div>
+        <div style="display: flex;flex-direction: column;margin-left: 100px; margin-top: 70px;" class="navbar1">
+          <a href="" class="page">HOME</a>
+          <a href="services.html" class="page">SERVICES</a>
+          <a href="projects.html" class="page">PROJECTS</a>
+          <a href="#contacts" class="page">CONTACT</a>
+          <a href="aboutUs.html" class="page">ABOUT US</a>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script>
+    //logoanime
+
+    function scrollFunction() {
+
+      if (document.body.scrollTop > 130 || document.documentElement.scrollTop > 130) {
+        document.getElementById("logo").style.width = "85%";
+        document.getElementById("logo").style.marginLeft = "100px";
+        document.getElementById("logo").style.marginRight = "100px";
+
+      } else {
+        document.getElementById("logo").style.width = "100%";
+        document.getElementById("logo").style.marginLeft = "1px";
+      }
+
+    }
+
+    function myFunction() {
+      if (document.body.scrollTop > 1750 || document.documentElement.scrollTop > 1750) {
+
+        var speed = 80;
+        var speed1 = 15;
+        function incEltNbr(id) {
+          elt = document.getElementById(id);
+          endNbr = Number(document.getElementById(id).innerHTML);
+          incNbrRec(0, endNbr, elt);
+        }
+        function incEltNbrs(id) {
+          elt = document.getElementById(id);
+          endNbr = Number(document.getElementById(id).innerHTML);
+          incNbrRecs(0, endNbr, elt);
+        }
+        function incNbrRec(i, endNbr, elt) {
+          if (i <= endNbr) {
+            elt.innerHTML = i;
+            setTimeout(function () {
+              incNbrRec(i + 1, endNbr, elt);
+            }, speed);
+          }
+        }
+        function incNbrRecs(i, endNbr, elt) {
+          if (i <= endNbr) {
+            elt.innerHTML = i;
+            setTimeout(function () {
+              incNbrRecs(i + 1, endNbr, elt);
+            }, speed1);
+          }
+        }
+        function incNbr() {
+          incEltNbr("nbr");
+          incEltNbr("nbr1");
+          incEltNbr("nbr2");
+          incEltNbrs("nbr3");
+        }
+        incEltNbr("nbr");
+        incEltNbr("nbr1");
+        incEltNbr("nbr2");
+        incEltNbrs("nbr3");
+        window.onscroll = null
+      }
+    }
+    window.onscroll = function () { myFunction() };
+
+
+
+    //reviews
+    addEventListener("load", () => { // "load" is safe but "DOMContentLoaded" starts earlier
+      var index = 0;
+      const slides = document.querySelectorAll(".reviews");
+      const classHide = "reviews-hidden", count = slides.length;
+      nextSlide();
+      function nextSlide() {
+        slides[(index++) % count].classList.add(classHide);
+        slides[index % count].classList.remove(classHide);
+        setTimeout(nextSlide, 3000);
+      }
+    });
+
+
+    //imageanime
+    const scrollElements = document.querySelectorAll(".js-scroll");
+    const elementInView = (el, dividend = 1) => {
+      const elementTop = el.getBoundingClientRect().top;
+
+      return (
+        elementTop <=
+        (window.innerHeight || document.documentElement.clientHeight) / dividend
+      );
+    };
+
+    const elementOutofView = (el) => {
+      const elementTop = el.getBoundingClientRect().top;
+
+      return (
+        elementTop > (window.innerHeight || document.documentElement.clientHeight)
+      );
+    };
+
+    const displayScrollElement = (element) => {
+      element.classList.add("scrolled");
+    };
+
+    const hideScrollElement = (element) => {
+      element.classList.remove("scrolled");
+    };
+
+    const handleScrollAnimation = () => {
+      scrollElements.forEach((el) => {
+        if (elementInView(el, 1.25)) {
+          displayScrollElement(el);
+        } else if (elementOutofView(el)) {
+          hideScrollElement(el)
+        }
+      })
+    }
+    window.addEventListener("scroll", () => {
+      handleScrollAnimation(), scrollFunction()
+    });
+  </script>
+
+</body>
+
+</html>

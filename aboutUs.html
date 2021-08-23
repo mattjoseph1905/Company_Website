@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="https://kit.fontawesome.com/dae659b206.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined">
+    <title>Page Title</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        .sec {
+            height: 3300px;
+            background: rgb(38, 38, 38);
+            display: flex;
+            z-index: 10;
+            margin-bottom: 400px;
+            position: relative;
+            width: 100%;
+            flex-direction: column;
+        }
+
+        footer {
+            width: 100%;
+            height: 400px;
+            background: rgb(38, 38, 38);
+            color: #fff;
+            display: flex;
+            justify-content: left;
+            align-items: center;
+            position: fixed;
+            bottom: 0px;
+            z-index: 0;
+
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            background-color: rgb(38, 38, 38);
+        }
+
+        .navbar {
+            overflow: hidden;
+
+        }
+
+        .navbar a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+
+        .page1 {
+            margin-left: 250px;
+            margin-top: 20px;
+            color: white
+        }
+
+        .page {
+            margin-top: 20px;
+        }
+
+        .call {
+            margin-top: 20px;
+            margin-left: 400px;
+            border: 1px solid white;
+            margin-bottom: 10px;
+        }
+
+
+        .storyHeader {
+            margin-left: 100px;
+            color: white;
+            margin-top: 180px;
+        }
+
+        .storyContent {
+            padding-left: 300px;
+            padding-right: 300px;
+            padding-top: 50px;
+
+        }
+
+        .p1 {
+            color: white;
+            font-size: 17px;
+            line-height: 180%;
+        }
+
+        .reviews {
+            height: 400px;
+            width: 520px;
+            border: 1px solid #817069;
+            /* background-color: rgb(38, 38, 38); */
+            background-image: url(https://i.ibb.co/PTJDkgb/testimonials.jpg);
+            background-position: center;
+            background-size: cover;
+
+        }
+
+        .overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background-color: rgb(46, 45, 45);
+            overflow: hidden;
+            width: 520px;
+            height: 0;
+            transition: .5s ease;
+        }
+
+        .container:hover .overlay {
+            height: 100%;
+        }
+
+        .container {
+            position: relative;
+            width: 50%;
+        }
+
+        .founderimg {
+            width: 450px;
+            height: 600px;
+            /* margin-left: 300px;
+      margin: 50px; */
+        }
+
+        .text {
+            color: #817069;
+        }
+
+        #form {
+            margin-left: 70px;
+            margin-top: 50px;
+            padding: 20px
+        }
+
+        .button1 {
+            width: 215px;
+            height: 50px;
+            margin-top: 25px;
+            margin-bottom: 25px;
+            background-color: #817069;
+            border: transparent;
+        }
+
+
+        @import url("https://fonts.googleapis.com/css2?family=Merriweather&family=Merriweather+Sans:wght@300&display=swap");
+
+        .scroll-element {
+            width: 50%;
+        }
+
+        .scroll-element {
+            min-height: 300px;
+            height: 100%;
+            background-color: #eaeaea;
+        }
+
+        @media screen and (max-width: 650px) {
+
+
+            .scroll-element {
+                height: 100%;
+            }
+
+            .scroll-element {
+                width: 100%;
+            }
+        }
+
+        .js-scroll {
+            opacity: 0;
+            transition: opacity 500ms;
+        }
+
+        .js-scroll.scrolled {
+            opacity: 1;
+        }
+
+        .scrolled.fade-in {
+            animation: fade-in 1s ease-in-out both;
+        }
+
+        .scrolled.fade-in-bottom {
+            animation: fade-in-bottom 1s ease-in-out both;
+        }
+
+        .scrolled.slide-left {
+            animation: slide-in-left 1s ease-in-out both;
+        }
+
+        .scrolled.slide-right {
+            animation: slide-in-right 1s ease-in-out both;
+        }
+
+        @keyframes slide-in-left {
+            0% {
+                -webkit-transform: translateX(-100px);
+                transform: translateX(-100px);
+                opacity: 0;
+            }
+
+            100% {
+                -webkit-transform: translateX(0);
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+
+        @keyframes slide-in-right {
+            0% {
+                -webkit-transform: translateX(100px);
+                transform: translateX(100px);
+                opacity: 0;
+            }
+
+            100% {
+                -webkit-transform: translateX(0);
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+
+        @keyframes fade-in-bottom {
+            0% {
+                -webkit-transform: translateY(50px);
+                transform: translateY(50px);
+                opacity: 0;
+            }
+
+            100% {
+                -webkit-transform: translateY(0);
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        @keyframes fade-in {
+            0% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="sec">
+        <div style="display: flex; flex-direction: row;" class="navbar">
+            <div style="width: 2px;">
+                <img src="assets/SSE PNG.png"
+                    style=" margin-left: 20px; height:50px; width:100px; margin-top: 20px; position: fixed;opacity: 0.8; z-index: 1;"
+                    alt="logoimg"> </div>
+            <a href="home.html" class="page1">HOME</a>
+            <a href="services.html" class="page">SERVICES</a>
+            <a href="projects.html" class="page">PROJECTS</a>
+            <a href="contacts.html" class="page">CONTACT</a>
+            <a href="aboutUs.html" class="page">ABOUT US</a>
+            <a href="" class="call">CALL
+                NOW</a>
+        </div>
+        <div style="">
+            <span class="material-icons-outlined"
+                style=" z-index: 1;position: fixed; font-size: 30px;color:#817069;margin-top: 500px;margin-left: 10px;">
+                facebook
+            </span>
+            <i class="fab fa-instagram" style=" z-index: 1;position: fixed; font-size: 30px;color:#817069;margin-top: 550px;margin-left: 10px;"></i>
+            <i class="fa fa-linkedin" style=" z-index: 1;position: fixed; font-size: 30px;color:#817069;margin-top: 600px;margin-left: 10px;"></i>
+
+        </div>
+        <div style="height: 700px;background-color: rgb(46, 45, 45);margin: 80px; ">
+            <div style="background-color:#817069;
+            width: 800px;
+           height: 500px;
+           top:-20px;
+           left:50px; 
+           position:relative;
+           z-index:1;
+           margin-left: 150px;
+           margin-top: 100px;" >
+                <img src="assets/Bulb Graded.jpg" style="width: 800px;
+                height: 500px;">
+            </div>
+            <div style="
+           width: 400px;
+            height: 400px;
+           position:relative;
+           top:-250px;
+           left:800px;
+           z-index:2;
+       " >
+                <img src="assets/Bulb2 Graded.jpg" style="width: 300px; height: 400px;">
+            </div>
+        </div>
+        
+        <div style="height: 500px; display: flex; flex-direction: row;margin: 50px;">
+
+            <div>
+                <h1 class="storyHeader">Our Story</h1>
+            </div>
+            <div class="storyContent" ">
+                <p class="p1">
+                    For over 30 + years , we have completed many of electrical private works and Public work
+                    Department
+                    electrical works and also taking electrical maintenance work and running successfully.</p>
+                <p class="p1">
+                    We Undertake all types of Electrical Works Including HT & LT panel Fabrication works, Hospital
+                    Wiring, House Wiring, Computer Cable Net Working, Office Automation Equipments wiring, Automatic
+                    Generator & Panel Wiring, Lightning Arrester etc.....
+                    We are one of the Leading Electrical Contracting Company in NAGERCOIL (KANYAKUMARI District). We
+                    have more than 25 Years Experiance Skilled "Labour" and "Supervisor".</p>
+                <p class="p1"> "Quality and Client Satisfaction is Our First Priority"</p>
+            </div>
+        </div>
+        <div
+        style="height: 550px; display: flex; flex-direction: row;background-color: rgb(46, 45, 45);margin: 50px;">
+        <div>
+            <h1 class="storyHeader">Our Values</h1>
+        </div>
+        <div class="storyContent">
+            <p class=" p1">
+                RESPECT AND HUMILITY in dealing with everyone within and outside the organisation</br>
+
+                FLOW by constantly learning and being inspired from the universal laws of nature</br>
+
+                INDIANNESS by believing in oneself and doing things the Indian way</br>
+
+                INTROSPECTION for continuous learning, self-development and personal excellence</br>
+
+                OPENNESS AND ADAPTABILITY by accepting new ideas and knowledge, and being proactive in meeting
+                challenges emerging from changing business scenarios</br>
+
+                VALUING AND NURTURING RELATIONSHIPS with customers, business associates, stakeholders, communities
+                and the society LEADERSHIP in thought and in business</br>
+
+                SIMPLICITY AND POSITIVITY to foster innovation, speed and imagination</p>
+
+        </div>
+    </div>
+        <div style="height: 730px;  display: flex; flex-direction: row;">
+            <div style="margin-left: 200px;">
+                <div style="display: flex; flex-direction: row;">
+                    <h1
+                        style="top:183px;
+                    left:320px; 
+                    position:relative;
+                    z-index:10; color: rgb(73, 72, 72); font-size: 70px; font-stretch:ultra-condensed;font-weight: lighter;">
+                        The</h1>
+                    <h1 style="top:206px;
+                     left:370px; 
+                     position:relative;
+                     z-index:10; color: black; font-size: 70px; font-weight: lighter;">FOUNDER</h1>
+                </div>
+                <div style="background-color:#817069;
+                     width: 1200px;
+                    height: 400px;
+                    top:-150px;
+                    left:50px; 
+                    position:relative;
+                    z-index:1;" class="scroll-element js-scroll slide-left">
+                </div>
+                <div style="
+                    width: 450px;
+                     height: 600px;
+                    position:relative;
+                    top:-500px;
+                    left:-70px;
+                    z-index:2;
+                " class="scroll-element js-scroll fade-in-bottom">
+                    <img class="founderimg" src="assets/001.jpg">
+                </div>
+                <div style="background-color:rgb(38,38,38);
+                    width: 850px;
+                   height: 300px;
+                   position:relative;
+                   top:-880px;
+                   left:130px;
+                   z-index:3; 
+                    opacity: 0.99;
+                    padding:20px" class="scroll-element js-scroll slide-right">
+                    <h1 style="font-weight: 20; color: white; margin-left: 20px;">Mr. Sadasivan</h1>
+                    <h3 style="font-weight: 20; color: white; margin-left: 20px;"> 1961-2020</h3>
+                    <p style="font-weight: 20; color: white; margin-left: 20px;line-height: 25px;">A first-generation
+                        enterpreneur,
+                        MR. S.Sadasivan started his journey in the 1990's. His dream was of making available to everyone
+                        what only
+                        the
+                        rich could afford.</p>
+                    <p style="font-weight: 20; color: white; margin-left: 20px;line-height: 25px;">During this journey
+                        he also
+                        invested and mentored other enterpreneurs. He embodies the organisation's credo, "Rewrite Rules,
+                        Retain
+                        Values" and consider indianness as the core value driving the organisation.</p>
+                </div>
+            </div>
+
+
+
+        </div>
+        <div
+            style="height: 400px; display: flex; flex-direction: row;background-color: rgb(38,38,38);margin-bottom: 100px;margin: 20px; padding:10px">
+            <div style="display: flex; flex-direction: row;margin-left: 180px;">
+                <div class="container">
+                    <div class="reviews">
+                        <h1 style="margin-left: 180px;color:white ;margin-top: 80px;font-size: 50px;font-weight: 1;">
+                            Awards</h1>
+                        <span class="material-icons-outlined"
+                            style="margin-top:20px;color:white ;font-size: 130px;margin-left: 200px; font-weight: 1;">
+                            military_tech
+                        </span>
+                    </div>
+                    <div class="overlay">
+                        <div class="text">Hello World</div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="reviews">
+                        <h1 style="margin-left: 160px;color:white ;margin-top: 80px;font-size: 50px;font-weight: 1;">
+                            Careers</h1>
+                        <span class="material-icons-outlined"
+                            style="margin-top:20px;color:white ;font-size: 120px;margin-left: 200px; font-weight: 1;">
+                            work_outline
+                        </span>
+                    </div>
+                    <div class="overlay">
+                        <div class="text">Hello World</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div style="height: 450px; width: 100%; background-color:rgb(46,45,45) ; display: flex; flex-direction: row; position: absolute;"
+            id="contacts">
+            <div style="display: flex; flex-direction: column;width: 400px;margin: 30px;">
+                <h1 style="color: #817069; margin-top: 50px; margin-left: 80px; font-size: 50px;font-weight: 20;">
+                    Contact Us
+                </h1>
+                <div style="display: flex;flex-direction: row;">
+                    <span class="material-icons-outlined"
+                        style="font-size:50px;color:#817069;margin: 10px;margin-left: 30px;">home</span>
+                    <l1 style="color: #817069; margin-top: 20px;">
+                        3-184/1l, Amman Street, Ananthan Nagar, Asaripallam( PO), Nagercoil, K K dist-629201</l1>
+                </div>
+                <div style="display: flex;flex-direction: row;">
+                    <span class="material-icons-outlined"
+                        style="font-size:50px;color:#817069;margin-top: 20px;margin-left: 30px;">email</span>
+                    <l1 style="color: #817069; margin-top: 25px; margin-left: 20px;">reachsse@hotmail.com</l1>
+                </div>
+                <div style="display: flex;flex-direction: row;">
+                    <span class="material-icons-outlined"
+                        style="font-size:50px;color:#817069;margin-left: 30px; margin-top: 30px;">phone_android</span>
+                    <l1 style="color: #817069; margin-top: 45px; margin-left: 20px;"> 9791511832</l1>
+                </div>
+                <div class="form"></div>
+            </div>
+            <div>
+                <form id="form">
+                    <div style="display: flex; flex-direction: row;">
+                        <input type="text" id="Name" placeholder="Full Name"
+                            style="border-top: transparent; background-color: initial; border-bottom-color: #817069;padding: 20px; border-left: transparent;border-right: transparent; margin: 25px; font-size: 18px;"><br>
+                        <input type="text" id="Email" placeholder="Enter your mail id"
+                            style="border-top: transparent; background-color: initial; border-bottom-color: #817069;padding: 20px; border-left: transparent;border-right: transparent;margin: 25px;font-size: 18px;"><br>
+                    </div>
+                    <div style="display: flex; flex-direction: row;">
+                        <input type="text" id="Phone" placeholder="Enter your phone number" required
+                            style="border-top: transparent; background-color: initial; border-bottom-color: #817069;padding: 20px; border-left: transparent;border-right: transparent;margin: 25px;font-size: 18px;"><br>
+                        <input type="text" id="Address" placeholder="Address" required
+                            style="border-top: transparent; background-color: initial; border-bottom-color: #817069;padding: 20px; border-left: transparent;border-right: transparent;margin: 25px;font-size: 18px;"><br>
+                    </div>
+                    <button type="submit" class="button1" style="margin-left: 170px;">Submit</button>
+                </form>
+            </div>
+            <div style="display: flex;flex-direction: column;margin-left: 100px; margin-top: 70px;" class="navbar">
+                <a href="" class="page">HOME</a>
+                <a href="services.html" class="page">SERVICES</a>
+                <a href="projects.html" class="page">PROJECTS</a>
+                <a href="#contacts" class="page">CONTACT</a>
+                <a href="aboutUs.html" class="page">ABOUT US</a>
+            </div>
+        </div>
+        </div>
+    </footer>
+
+</body>
+<script>
+    const scrollElements = document.querySelectorAll(".js-scroll");
+
+    const elementInView = (el, dividend = 1) => {
+        const elementTop = el.getBoundingClientRect().top;
+
+        return (
+            elementTop <=
+            (window.innerHeight || document.documentElement.clientHeight) / dividend
+        );
+    };
+
+    const elementOutofView = (el) => {
+        const elementTop = el.getBoundingClientRect().top;
+
+        return (
+            elementTop > (window.innerHeight || document.documentElement.clientHeight)
+        );
+    };
+
+    const displayScrollElement = (element) => {
+        element.classList.add("scrolled");
+    };
+
+    const hideScrollElement = (element) => {
+        element.classList.remove("scrolled");
+    };
+
+    const handleScrollAnimation = () => {
+        scrollElements.forEach((el) => {
+            if (elementInView(el, 1.25)) {
+                displayScrollElement(el);
+            } else if (elementOutofView(el)) {
+                hideScrollElement(el)
+            }
+        })
+    }
+
+    window.addEventListener("scroll", () => {
+        handleScrollAnimation();
+    });
+
+    function store() { //stores items in the localStorage
+        var Name = document.getElementById('Name').value;
+        var Email = document.getElementById('Email').value;
+        var key = document.getElementById('Phone').value;
+        var Address = document.getElementById('Address').value; //gets the key from the user
+
+        const details = {
+            Name: Name,
+            // Phone: Phone,
+            Email: Email,
+            Address: Address
+        }
+
+        window.localStorage.setItem(key, JSON.stringify(details));
+        //converting object to string
+    }
+
+    function retrieveRecords() { //retrieves items in the localStorage
+        console.log("retrieve records");
+        var key = document.getElementById('retrieveKey').value;
+        var records = window.localStorage.getItem(key);
+        var paragraph = document.createElement("p");
+        var infor = document.createTextNode(records);
+        paragraph.appendChild(infor);
+        var element = document.getElementById("retrieve");
+        element.appendChild(paragraph);
+    }
+    window.onload = function () { //ensures the page is loaded before functions are executed.
+        document.getElementById("form").onsubmit = store
+        document.getElementById("retrieveButton").onclick = retrieveRecords
+    }
+</script>
+
+</html>
